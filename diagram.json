@@ -1,306 +1,196 @@
+
 {
-  "wizardId": "gs1-ai-decision-tree.v1",
-  "title": "GS1 AI Decision Tree",
-  "version": "1.0.0",
+  "wizardId": "gs1-hcdc-decision-tree.r1-2025-11",
+  "title": "GS1 High-Capacity Data Carrier - Decision Tree",
+  "version": "1.0 (Architecture Finding, Nov 2025)",
   "i18n": {
     "defaultLocale": "en",
+    "localeNames": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español"
+    },
     "strings": {
       "en": {
+        "title": "GS1 High-Capacity Data Carrier - Decision Tree",
         "btn_continue": "Continue",
+        "btn_back": "Back",
         "btn_restart": "Restart",
         "a_yes": "Yes",
         "a_no": "No",
-        "a_potentially": "Potentially",
-        "title": "GS1 AI Decision Tree",
-        "s_start": "Start: New GS1 Application Identifier (AI) business requirement",
-        "q_d1": "Is the data for use in an open/unrestricted environment?",
-        "q_d2": "Is the data expected to be scanned/read from an AIDC data carrier on a physical entity?",
-        "q_d3": "Is this data in an accessible online database or location?",
-        "p_a4": "ASSESS: How can a share standard (GS1 or other) be used or updated/extended to support the request?",
-        "p_a4a": "DETERMINE: Blockers for share standard adoption + industry investment analysis.",
-        "q_d5": "Would industry support a change to current processes/practices that enables adoption of a share standard?",
-        "q_d6": "Does the AI data enable a complete action or decision WITHOUT further data being retrieved?",
-        "q_d7": "Is the AI data expected to encode a list of details that has no natural upper limit?",
-        "q_d8": "Does the requested AI duplicate (exactly or similarly) an existing AI?",
-        "q_d9": "Is the AI data expected to express a country-specific code value?",
-        "q_d10": "Is the AI data for a LIMITED number of country-specific codes (exception for migration)?",
-        "q_d11": "Is the new AI explicitly required as encoded AIDC data for regulatory compliance and/or operational processes?",
-        "r_cA": "CONCLUSION A: No need for a globally standardised AI. Use closed/restricted mechanisms (e.g., AI (90), AIs (91)-(99), or non-GS1 extensions) as appropriate.",
-        "r_cB": "CONCLUSION B: Use a share standard for data exchange/retrieval (possibly update/extend it, and/or support adoption with training/tools).",
-        "r_cC": "CONCLUSION C: Use an existing AI (e.g., SI unit-based AI) and apply software unit conversions / avoid duplication.",
-        "r_cD": "CONCLUSION D: Create a new GS1 Application Identifier per SOP and business rules; conserve key space and prefer existing value formats where possible."
+        "a_continue": "Continue assessment",
+        "a_stop": "Do not continue assessment",
+        "ui_start": "Start",
+        "ui_decision": "Decision",
+        "ui_process": "Process",
+        "ui_result": "Conclusion",
+
+        "start_text": "New business requirement for additional data (data presumed available at time of AIDC encoding).",
+
+        "d1": "Could an existing GS1 AI represent the data (exactly or similarly)?",
+        "d2": "Is the data for use in an entirely closed or restricted environment?",
+        "d3": "Is the data restricted for use by a specific sector, region or country?",
+        "d4": "Is this data in an accessible online database or location?",
+        "d5": "Does the data enable a complete action or decision?",
+        "d6": "Is the data value logically unchangeable after it has been specified?",
+        "d7": "Is the data expected to express an unlimited list of details?",
+        "d8": "Is the data explicitly required as encoded AIDC data on the physical entity?",
+
+        "p1": "PROCESS 1: Gather additional requirements for restricted-use data and SME review.",
+        "p2": "PROCESS 2: GS1 SME to assess blockers and opportunities for share standard adoption.",
+
+        "cA": "CONCLUSION A: Use existing GS1 Application Identifier.",
+        "cB": "CONCLUSION B: No need for standardisation (closed/restricted environment).",
+        "cC": "CONCLUSION C: Use the established global open 'share' standard.",
+        "cD": "CONCLUSION D: Create the new GS1 Application Identifier."
       },
+
       "de": {
+        "title": "GS1 High-Capacity Data Carrier - Entscheidungsbaum",
         "btn_continue": "Weiter",
-        "btn_restart": "Neu starten",
+        "btn_back": "Zurück",
+        "btn_restart": "Neustart",
         "a_yes": "Ja",
         "a_no": "Nein",
-        "a_potentially": "Möglicherweise",
-        "title": "GS1 AI Decision Tree",
-        "s_start": "Start: New GS1 Application Identifier (AI) business requirement",
-        "q_d1": "Is the data for use in an open/unrestricted environment?",
-        "q_d2": "Is the data expected to be scanned/read from an AIDC data carrier on a physical entity?",
-        "q_d3": "Is this data in an accessible online database or location?",
-        "p_a4": "ASSESS: How can a share standard (GS1 or other) be used or updated/extended to support the request?",
-        "p_a4a": "DETERMINE: Blockers for share standard adoption + industry investment analysis.",
-        "q_d5": "Would industry support a change to current processes/practices that enables adoption of a share standard?",
-        "q_d6": "Does the AI data enable a complete action or decision WITHOUT further data being retrieved?",
-        "q_d7": "Is the AI data expected to encode a list of details that has no natural upper limit?",
-        "q_d8": "Does the requested AI duplicate (exactly or similarly) an existing AI?",
-        "q_d9": "Is the AI data expected to express a country-specific code value?",
-        "q_d10": "Is the AI data for a LIMITED number of country-specific codes (exception for migration)?",
-        "q_d11": "Is the new AI explicitly required as encoded AIDC data for regulatory compliance and/or operational processes?",
-        "r_cA": "CONCLUSION A: No need for a globally standardised AI. Use closed/restricted mechanisms (e.g., AI (90), AIs (91)-(99), or non-GS1 extensions) as appropriate.",
-        "r_cB": "CONCLUSION B: Use a share standard for data exchange/retrieval (possibly update/extend it, and/or support adoption with training/tools).",
-        "r_cC": "CONCLUSION C: Use an existing AI (e.g., SI unit-based AI) and apply software unit conversions / avoid duplication.",
-        "r_cD": "CONCLUSION D: Create a new GS1 Application Identifier per SOP and business rules; conserve key space and prefer existing value formats where possible."
+        "a_continue": "Bewertung fortsetzen",
+        "a_stop": "Bewertung beenden",
+        "ui_start": "Start",
+        "ui_decision": "Entscheidung",
+        "ui_process": "Prozess",
+        "ui_result": "Fazit",
+
+        "start_text": "Neue Business-Anforderung für zusätzliche Daten (Daten müssen zum Zeitpunkt der Kennzeichnung verfügbar sein).",
+
+        "d1": "Könnte ein bestehender GS1 AI die Daten (exakt oder ähnlich) darstellen?",
+        "d2": "Sind die Daten ausschließlich für eine geschlossene oder eingeschränkte Umgebung bestimmt?",
+        "d3": "Sind die Daten auf einen bestimmten Sektor, eine Region oder ein Land beschränkt?",
+        "d4": "Sind diese Daten in einer zugänglichen Online-Datenbank oder an einem Online-Speicherort verfügbar?",
+        "d5": "Ermöglichen die Daten eine vollständige Aktion oder Entscheidung?",
+        "d6": "Ist der Datenwert logisch unveränderlich, nachdem er festgelegt wurde?",
+        "d7": "Sollen die Daten eine unbegrenzte Liste von Details ausdrücken?",
+        "d8": "Sind die Daten ausdrücklich als kodierte AIDC-Daten auf dem physischen Objekt erforderlich?",
+
+        "p1": "PROZESS 1: Zusätzliche Anforderungen für eingeschränkte Nutzung sammeln und durch GS1-SME prüfen.",
+        "p2": "PROZESS 2: GS1-SME bewertet Hürden und Chancen für die Einführung von Share-Standards.",
+
+        "cA": "FAZIT A: Bestehenden GS1 Application Identifier verwenden.",
+        "cB": "FAZIT B: Keine Standardisierung erforderlich (geschlossene/eingeschränkte Umgebung).",
+        "cC": "FAZIT C: Etablierten globalen Share-Standard verwenden.",
+        "cD": "FAZIT D: Neuen GS1 Application Identifier erstellen."
+      },
+
+      "es": {
+        "title": "GS1 High-Capacity Data Carrier - Árbol de decisión",
+        "btn_continue": "Continuar",
+        "btn_back": "Atrás",
+        "btn_restart": "Reiniciar",
+        "a_yes": "Sí",
+        "a_no": "No",
+        "a_continue": "Continuar la evaluación",
+        "a_stop": "No continuar la evaluación",
+        "ui_start": "Inicio",
+        "ui_decision": "Decisión",
+        "ui_process": "Proceso",
+        "ui_result": "Conclusión",
+
+        "start_text": "Nuevo requisito empresarial para datos adicionales (se asume que los datos están disponibles en el momento de la codificación AIDC).",
+
+        "d1": "¿Podría un AI de GS1 existente representar los datos (exacta o de forma similar)?",
+        "d2": "¿Los datos están destinados a un entorno completamente cerrado o restringido?",
+        "d3": "¿Los datos están restringidos a un sector, región o país específico?",
+        "d4": "¿Estos datos están disponibles en una base de datos o ubicación en línea accesible?",
+        "d5": "¿Los datos permiten completar una acción o decisión?",
+        "d6": "¿El valor de los datos es lógicamente inmutable una vez especificado?",
+        "d7": "¿Se espera que los datos expresen una lista ilimitada de detalles?",
+        "d8": "¿Los datos son explícitamente requeridos como datos AIDC codificados en la entidad física?",
+
+        "p1": "PROCESO 1: Recopilar requisitos adicionales para datos de uso restringido y revisión por expertos GS1.",
+        "p2": "PROCESO 2: El experto GS1 evalúa barreras y oportunidades para la adopción de estándares de compartición.",
+
+        "cA": "CONCLUSIÓN A: Utilizar un Application Identifier de GS1 existente.",
+        "cB": "CONCLUSIÓN B: No se requiere estandarización (entorno cerrado o restringido).",
+        "cC": "CONCLUSIÓN C: Utilizar el estándar global abierto de compartición establecido.",
+        "cD": "CONCLUSIÓN D: Crear un nuevo Application Identifier de GS1."
       }
     }
   },
+
   "nodes": [
-    {
-      "id": "start",
-      "type": "start",
-      "text": "s_start",
-      "next": "d1"
-    },
-    {
-      "id": "d1",
-      "type": "decision",
-      "text": "q_d1",
+    { "id": "start", "type": "start", "text": "start_text", "next": "d1" },
+
+    { "id": "d1", "type": "decision", "text": "d1",
       "outcomes": [
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "cA"
-        },
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "d2"
-        }
+        { "label": "a_yes", "next": "cA" },
+        { "label": "a_no", "next": "d2" }
       ]
     },
-    {
-      "id": "d2",
-      "type": "decision",
-      "text": "q_d2",
+
+    { "id": "d2", "type": "decision", "text": "d2",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "d3"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "a4"
-        }
+        { "label": "a_yes", "next": "cB" },
+        { "label": "a_no", "next": "d3" }
       ]
     },
-    {
-      "id": "d3",
-      "type": "decision",
-      "text": "q_d3",
+
+    { "id": "d3", "type": "decision", "text": "d3",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "cB"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "a4"
-        },
-        {
-          "label": "a_potentially",
-          "condition": "potentially",
-          "next": "a4"
-        }
+        { "label": "a_yes", "next": "p1" },
+        { "label": "a_no", "next": "d4" }
       ]
     },
-    {
-      "id": "a4",
-      "type": "process",
-      "text": "p_a4",
-      "next": "a4_choice"
-    },
-    {
-      "id": "a4_choice",
-      "type": "decision",
-      "text": "p_a4",
-      "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "can_use_or_extend",
-          "next": "cB"
-        },
-        {
-          "label": "a_no",
-          "condition": "cannot_use_or_extend",
-          "next": "a4a"
-        }
-      ],
-      "ui": {
-        "note": "This is the decision after assessing update/extension feasibility."
-      }
-    },
-    {
-      "id": "a4a",
-      "type": "process",
-      "text": "p_a4a",
-      "next": "d5"
-    },
-    {
-      "id": "d5",
-      "type": "decision",
-      "text": "q_d5",
-      "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "cB"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "d6"
-        }
+
+    { "id": "p1", "type": "process", "text": "p1",
+      "nextOptions": [
+        { "label": "a_continue", "next": "d4" },
+        { "label": "a_stop", "next": "cC" }
       ]
     },
-    {
-      "id": "d6",
-      "type": "decision",
-      "text": "q_d6",
+
+    { "id": "d4", "type": "decision", "text": "d4",
       "outcomes": [
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "cB"
-        },
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "d7"
-        }
+        { "label": "a_yes", "next": "cC" },
+        { "label": "a_no", "next": "p2" }
       ]
     },
-    {
-      "id": "d7",
-      "type": "decision",
-      "text": "q_d7",
-      "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "cB"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "d8"
-        }
+
+    { "id": "p2", "type": "process", "text": "p2",
+      "nextOptions": [
+        { "label": "a_continue", "next": "d5" },
+        { "label": "a_stop", "next": "cC" }
       ]
     },
-    {
-      "id": "d8",
-      "type": "decision",
-      "text": "q_d8",
+
+    { "id": "d5", "type": "decision", "text": "d5",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "cC"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "d9"
-        }
+        { "label": "a_no", "next": "cC" },
+        { "label": "a_yes", "next": "d6" }
       ]
     },
-    {
-      "id": "d9",
-      "type": "decision",
-      "text": "q_d9",
+
+    { "id": "d6", "type": "decision", "text": "d6",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "d10"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "d11"
-        }
+        { "label": "a_no", "next": "cC" },
+        { "label": "a_yes", "next": "d7" }
       ]
     },
-    {
-      "id": "d10",
-      "type": "decision",
-      "text": "q_d10",
+
+    { "id": "d7", "type": "decision", "text": "d7",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "d11"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "cB"
-        }
+        { "label": "a_yes", "next": "cC" },
+        { "label": "a_no", "next": "d8" }
       ]
     },
-    {
-      "id": "d11",
-      "type": "decision",
-      "text": "q_d11",
+
+    { "id": "d8", "type": "decision", "text": "d8",
       "outcomes": [
-        {
-          "label": "a_yes",
-          "condition": "yes",
-          "next": "cD"
-        },
-        {
-          "label": "a_no",
-          "condition": "no",
-          "next": "cB"
-        }
+        { "label": "a_no", "next": "cC" },
+        { "label": "a_yes", "next": "cD" }
       ]
     },
-    {
-      "id": "cA",
-      "type": "result",
-      "text": "r_cA"
-    },
-    {
-      "id": "cB",
-      "type": "result",
-      "text": "r_cB"
-    },
-    {
-      "id": "cC",
-      "type": "result",
-      "text": "r_cC"
-    },
-    {
-      "id": "cD",
-      "type": "result",
-      "text": "r_cD"
-    }
-  ],
-  "metadata": {
-    "source": {
-      "format": "Image+Doc",
-      "file": "image.png",
-      "derivedFrom": "ag-rff-principles-criteria-high-capacity-data-carrier-ag-review.docx"
-    },
-    "audit": {
-      "createdBy": "copilot",
-      "createdAt": "2026-01-26T09:46:40.079773"
-    }
-  }
+
+    { "id": "cA", "type": "result", "text": "cA" },
+    { "id": "cB", "type": "result", "text": "cB" },
+    { "id": "cC", "type": "result", "text": "cC" },
+    { "id": "cD", "type": "result", "text": "cD" }
+  ]
 }
