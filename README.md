@@ -1,13 +1,7 @@
-# GS1 AI Decision Tree — Wizard (Static)
+# GS1 AI Decision Tree Wizard 
 
-This is a small, dependency-free static web project.
-
-## Run locally
-- Open the folder in VS Code
-- Start **Live Server**
-- Open `index.html`.
-
-The wizard loads `diagram.json` via `fetch()`, so it must run from a web server.
+## Background
+Taking the example of the decision tree in the latest finding of the GS1 Architecture Group, this repo represents an experiment how GS1 could make static decision trees into interactive, multi-language web apps. 
 
 ## Language
 - Use the dropdown (top right)
