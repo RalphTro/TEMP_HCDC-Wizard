@@ -1,0 +1,306 @@
+{
+  "wizardId": "gs1-ai-decision-tree.v1",
+  "title": "GS1 AI Decision Tree",
+  "version": "1.0.0",
+  "i18n": {
+    "defaultLocale": "en",
+    "strings": {
+      "en": {
+        "btn_continue": "Continue",
+        "btn_restart": "Restart",
+        "a_yes": "Yes",
+        "a_no": "No",
+        "a_potentially": "Potentially",
+        "title": "GS1 AI Decision Tree",
+        "s_start": "Start: New GS1 Application Identifier (AI) business requirement",
+        "q_d1": "Is the data for use in an open/unrestricted environment?",
+        "q_d2": "Is the data expected to be scanned/read from an AIDC data carrier on a physical entity?",
+        "q_d3": "Is this data in an accessible online database or location?",
+        "p_a4": "ASSESS: How can a share standard (GS1 or other) be used or updated/extended to support the request?",
+        "p_a4a": "DETERMINE: Blockers for share standard adoption + industry investment analysis.",
+        "q_d5": "Would industry support a change to current processes/practices that enables adoption of a share standard?",
+        "q_d6": "Does the AI data enable a complete action or decision WITHOUT further data being retrieved?",
+        "q_d7": "Is the AI data expected to encode a list of details that has no natural upper limit?",
+        "q_d8": "Does the requested AI duplicate (exactly or similarly) an existing AI?",
+        "q_d9": "Is the AI data expected to express a country-specific code value?",
+        "q_d10": "Is the AI data for a LIMITED number of country-specific codes (exception for migration)?",
+        "q_d11": "Is the new AI explicitly required as encoded AIDC data for regulatory compliance and/or operational processes?",
+        "r_cA": "CONCLUSION A: No need for a globally standardised AI. Use closed/restricted mechanisms (e.g., AI (90), AIs (91)-(99), or non-GS1 extensions) as appropriate.",
+        "r_cB": "CONCLUSION B: Use a share standard for data exchange/retrieval (possibly update/extend it, and/or support adoption with training/tools).",
+        "r_cC": "CONCLUSION C: Use an existing AI (e.g., SI unit-based AI) and apply software unit conversions / avoid duplication.",
+        "r_cD": "CONCLUSION D: Create a new GS1 Application Identifier per SOP and business rules; conserve key space and prefer existing value formats where possible."
+      },
+      "de": {
+        "btn_continue": "Weiter",
+        "btn_restart": "Neu starten",
+        "a_yes": "Ja",
+        "a_no": "Nein",
+        "a_potentially": "Möglicherweise",
+        "title": "GS1 AI Decision Tree",
+        "s_start": "Start: New GS1 Application Identifier (AI) business requirement",
+        "q_d1": "Is the data for use in an open/unrestricted environment?",
+        "q_d2": "Is the data expected to be scanned/read from an AIDC data carrier on a physical entity?",
+        "q_d3": "Is this data in an accessible online database or location?",
+        "p_a4": "ASSESS: How can a share standard (GS1 or other) be used or updated/extended to support the request?",
+        "p_a4a": "DETERMINE: Blockers for share standard adoption + industry investment analysis.",
+        "q_d5": "Would industry support a change to current processes/practices that enables adoption of a share standard?",
+        "q_d6": "Does the AI data enable a complete action or decision WITHOUT further data being retrieved?",
+        "q_d7": "Is the AI data expected to encode a list of details that has no natural upper limit?",
+        "q_d8": "Does the requested AI duplicate (exactly or similarly) an existing AI?",
+        "q_d9": "Is the AI data expected to express a country-specific code value?",
+        "q_d10": "Is the AI data for a LIMITED number of country-specific codes (exception for migration)?",
+        "q_d11": "Is the new AI explicitly required as encoded AIDC data for regulatory compliance and/or operational processes?",
+        "r_cA": "CONCLUSION A: No need for a globally standardised AI. Use closed/restricted mechanisms (e.g., AI (90), AIs (91)-(99), or non-GS1 extensions) as appropriate.",
+        "r_cB": "CONCLUSION B: Use a share standard for data exchange/retrieval (possibly update/extend it, and/or support adoption with training/tools).",
+        "r_cC": "CONCLUSION C: Use an existing AI (e.g., SI unit-based AI) and apply software unit conversions / avoid duplication.",
+        "r_cD": "CONCLUSION D: Create a new GS1 Application Identifier per SOP and business rules; conserve key space and prefer existing value formats where possible."
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start",
+      "text": "s_start",
+      "next": "d1"
+    },
+    {
+      "id": "d1",
+      "type": "decision",
+      "text": "q_d1",
+      "outcomes": [
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "cA"
+        },
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "d2"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "type": "decision",
+      "text": "q_d2",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "d3"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "a4"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "type": "decision",
+      "text": "q_d3",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "cB"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "a4"
+        },
+        {
+          "label": "a_potentially",
+          "condition": "potentially",
+          "next": "a4"
+        }
+      ]
+    },
+    {
+      "id": "a4",
+      "type": "process",
+      "text": "p_a4",
+      "next": "a4_choice"
+    },
+    {
+      "id": "a4_choice",
+      "type": "decision",
+      "text": "p_a4",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "can_use_or_extend",
+          "next": "cB"
+        },
+        {
+          "label": "a_no",
+          "condition": "cannot_use_or_extend",
+          "next": "a4a"
+        }
+      ],
+      "ui": {
+        "note": "This is the decision after assessing update/extension feasibility."
+      }
+    },
+    {
+      "id": "a4a",
+      "type": "process",
+      "text": "p_a4a",
+      "next": "d5"
+    },
+    {
+      "id": "d5",
+      "type": "decision",
+      "text": "q_d5",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "cB"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "d6"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "type": "decision",
+      "text": "q_d6",
+      "outcomes": [
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "cB"
+        },
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "d7"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "type": "decision",
+      "text": "q_d7",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "cB"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "d8"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "type": "decision",
+      "text": "q_d8",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "cC"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "d9"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "type": "decision",
+      "text": "q_d9",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "d10"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "d11"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "type": "decision",
+      "text": "q_d10",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "d11"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "cB"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "type": "decision",
+      "text": "q_d11",
+      "outcomes": [
+        {
+          "label": "a_yes",
+          "condition": "yes",
+          "next": "cD"
+        },
+        {
+          "label": "a_no",
+          "condition": "no",
+          "next": "cB"
+        }
+      ]
+    },
+    {
+      "id": "cA",
+      "type": "result",
+      "text": "r_cA"
+    },
+    {
+      "id": "cB",
+      "type": "result",
+      "text": "r_cB"
+    },
+    {
+      "id": "cC",
+      "type": "result",
+      "text": "r_cC"
+    },
+    {
+      "id": "cD",
+      "type": "result",
+      "text": "r_cD"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "format": "Image+Doc",
+      "file": "image.png",
+      "derivedFrom": "ag-rff-principles-criteria-high-capacity-data-carrier-ag-review.docx"
+    },
+    "audit": {
+      "createdBy": "copilot",
+      "createdAt": "2026-01-26T09:46:40.079773"
+    }
+  }
+}

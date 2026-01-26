@@ -1,0 +1,64 @@
+flowchart TD
+  start(["START: New GS1 Application Identifier (AI) business requirement"])
+
+  d1{"Is the data for use in an open/unrestricted environment?"}
+  cA(["CONCLUSION A
+No need for a globally standardised AI"])
+
+  d2{"Is the data expected to be scanned/read from an AIDC data carrier on a physical entity?"}
+  d3{"Is this data in an accessible online database or location?"}
+  cB(["CONCLUSION B
+Use share standard for data exchange/retrieval"])
+
+  a4["ASSESS: How can a share standard (GS1 or other) be used or updated/extended to support the request?"]
+  a4a["DETERMINE: Blockers for share standard adoption + industry investment analysis"]
+
+  d5{"Would industry support a change to current processes/practices that enables adoption of a share standard?"}
+  d6{"Does the AI data enable a complete action or decision WITHOUT further data being retrieved?"}
+  d7{"Is the AI data expected to encode a list of details that has no natural upper limit?"}
+  d8{"Does the requested AI duplicate (exactly or similarly) an existing AI?"}
+  cC(["CONCLUSION C
+Use existing AI (e.g., SI units) / software unit conversions"])
+
+  d9{"Is the AI data expected to express a country-specific code value?"}
+  d10{"Is the AI data for a LIMITED number of country-specific codes (exception for migration)?"}
+  d11{"Is the new AI explicitly required as encoded AIDC data for regulatory compliance and/or operational processes?"}
+  cD(["CONCLUSION D
+Create the new GS1 Application Identifier"])
+
+  start --> d1
+  d1 -- "No" --> cA
+  d1 -- "Yes" --> d2
+
+  d2 -- "Yes" --> d3
+  d2 -- "No" --> a4
+
+  d3 -- "Yes" --> cB
+  d3 -- "No" --> a4
+  d3 -- "Potentially" --> a4
+
+  a4 -- "Yes" --> cB
+  a4 -- "No" --> a4a
+
+  a4a --> d5
+
+  d5 -- "Yes" --> cB
+  d5 -- "No" --> d6
+
+  d6 -- "No" --> cB
+  d6 -- "Yes" --> d7
+
+  d7 -- "Yes" --> cB
+  d7 -- "No" --> d8
+
+  d8 -- "Yes" --> cC
+  d8 -- "No" --> d9
+
+  d9 -- "Yes" --> d10
+  d9 -- "No" --> d11
+
+  d10 -- "No" --> cB
+  d10 -- "Yes" --> d11
+
+  d11 -- "Yes" --> cD
+  d11 -- "No" --> cB
