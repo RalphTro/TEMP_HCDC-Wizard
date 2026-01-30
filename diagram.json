@@ -1,4 +1,3 @@
-
 {
   "wizardId": "gs1-hcdc-decision-tree.r1-2025-11",
   "title": "GS1 High-Capacity Data Carrier - Decision Tree",
@@ -8,7 +7,12 @@
     "localeNames": {
       "en": "English",
       "de": "Deutsch",
-      "es": "Español"
+      "es": "Español",
+      "ja": "日本語",
+      "zh-Hans": "简体中文（普通话）",
+      "fr": "Français",
+      "it": "Italiano",
+      "pl": "Polski"
     },
     "strings": {
       "en": {
@@ -111,6 +115,176 @@
         "cB": "CONCLUSIÓN B: No se requiere estandarización (entorno cerrado o restringido).",
         "cC": "CONCLUSIÓN C: Utilizar el estándar global abierto de compartición establecido.",
         "cD": "CONCLUSIÓN D: Crear un nuevo Application Identifier de GS1."
+      },
+
+      "ja": {
+        "title": "GS1高容量データキャリア - 意思決定ツリー",
+        "btn_continue": "続行",
+        "btn_back": "戻る",
+        "btn_restart": "再開始",
+        "a_yes": "はい",
+        "a_no": "いいえ",
+        "a_continue": "評価を続ける",
+        "a_stop": "評価を中止する",
+        "ui_start": "開始",
+        "ui_decision": "判断",
+        "ui_process": "プロセス",
+        "ui_result": "結論",
+
+        "start_text": "追加データに関する新たなビジネス要件（AIDC符号化時点でデータが利用可能であると想定）。",
+
+        "d1": "既存のGS1 AIでそのデータを（正確または類似の形で）表現できますか？",
+        "d2": "そのデータは完全にクローズドまたは制限された環境で使用されますか？",
+        "d3": "そのデータは特定の業界、地域、または国に限定されていますか？",
+        "d4": "そのデータはアクセス可能なオンラインデータベースまたは場所にありますか？",
+        "d5": "そのデータは完全なアクションまたは意思決定を可能にしますか？",
+        "d6": "一度指定された後、そのデータ値は論理的に不変ですか？",
+        "d7": "そのデータは無制限の詳細リストを表現することが期待されていますか？",
+        "d8": "そのデータは物理エンティティ上にAIDCとして符号化されたデータとして明示的に必要ですか？",
+
+        "p1": "プロセス1：制限利用データの追加要件を収集し、GS1のSMEでレビューする。",
+        "p2": "プロセス2：GS1のSMEが共有標準採用に向けた障壁と機会を評価する。",
+
+        "cA": "結論A：既存のGS1アプリケーション識別子を使用する。",
+        "cB": "結論B：標準化は不要（クローズド／制限付き環境）。",
+        "cC": "結論C：確立されたグローバルなオープン「シェア」標準を使用する。",
+        "cD": "結論D：新しいGS1アプリケーション識別子を作成する。"
+      },
+
+      "zh-Hans": {
+        "title": "GS1高容量数据载体——决策树",
+        "btn_continue": "继续",
+        "btn_back": "返回",
+        "btn_restart": "重新开始",
+        "a_yes": "是",
+        "a_no": "否",
+        "a_continue": "继续评估",
+        "a_stop": "停止评估",
+        "ui_start": "开始",
+        "ui_decision": "决策",
+        "ui_process": "流程",
+        "ui_result": "结论",
+
+        "start_text": "关于附加数据的新业务需求（假定在AIDC编码时数据可用）。",
+
+        "d1": "现有的GS1 AI能否（准确或类似地）表示该数据？",
+        "d2": "该数据是否仅用于完全封闭或受限的环境？",
+        "d3": "该数据是否仅限于特定行业、地区或国家使用？",
+        "d4": "该数据是否位于可访问的在线数据库或位置？",
+        "d5": "该数据是否能够促成完整的行动或决策？",
+        "d6": "一旦指定，该数据值在逻辑上是否不可更改？",
+        "d7": "该数据是否预期用于表达无限的细节列表？",
+        "d8": "是否明确要求将该数据作为编码的AIDC数据写入物理实体？",
+
+        "p1": "流程1：收集受限使用数据的附加需求，并由GS1领域专家（SME）审查。",
+        "p2": "流程2：由GS1领域专家评估采用开放共享标准的阻碍与机会。",
+
+        "cA": "结论A：使用现有的GS1应用标识符。",
+        "cB": "结论B：无需标准化（封闭/受限环境）。",
+        "cC": "结论C：使用既定的全球开放“共享”标准。",
+        "cD": "结论D：创建新的GS1应用标识符。"
+      },
+
+      "fr": {
+        "title": "GS1 Porteur de données à haute capacité - Arbre de décision",
+        "btn_continue": "Continuer",
+        "btn_back": "Retour",
+        "btn_restart": "Redémarrer",
+        "a_yes": "Oui",
+        "a_no": "Non",
+        "a_continue": "Poursuivre l’évaluation",
+        "a_stop": "Ne pas poursuivre l’évaluation",
+        "ui_start": "Démarrer",
+        "ui_decision": "Décision",
+        "ui_process": "Processus",
+        "ui_result": "Conclusion",
+
+        "start_text": "Nouvelle exigence métier pour des données supplémentaires (données présumées disponibles au moment du codage AIDC).",
+
+        "d1": "Un AI GS1 existant pourrait‑il représenter les données (exactement ou de manière similaire) ?",
+        "d2": "Les données sont‑elles destinées à un environnement entièrement fermé ou restreint ?",
+        "d3": "Les données sont‑elles limitées à un secteur, une région ou un pays spécifique ?",
+        "d4": "Ces données se trouvent‑elles dans une base de données ou un emplacement en ligne accessible ?",
+        "d5": "Les données permettent‑elles d’accomplir une action ou de prendre une décision complète ?",
+        "d6": "La valeur des données est‑elle logiquement immuable une fois spécifiée ?",
+        "d7": "Les données sont‑elles censées exprimer une liste illimitée de détails ?",
+        "d8": "Les données sont‑elles explicitement requises comme données AIDC encodées sur l’entité physique ?",
+
+        "p1": "PROCESSUS 1 : Recueillir des exigences supplémentaires pour les données à usage restreint et examen par un expert GS1.",
+        "p2": "PROCESSUS 2 : L’expert GS1 évalue les obstacles et les opportunités pour l’adoption du standard ouvert de partage.",
+
+        "cA": "CONCLUSION A : Utiliser un Identifiant d’Application GS1 existant.",
+        "cB": "CONCLUSION B : Pas besoin de standardisation (environnement fermé/restreint).",
+        "cC": "CONCLUSION C : Utiliser le standard mondial ouvert de « partage » établi.",
+        "cD": "CONCLUSION D : Créer le nouvel Identifiant d’Application GS1."
+      },
+
+      "it": {
+        "title": "GS1 High‑Capacity Data Carrier - Albero decisionale",
+        "btn_continue": "Continua",
+        "btn_back": "Indietro",
+        "btn_restart": "Riavvia",
+        "a_yes": "Sì",
+        "a_no": "No",
+        "a_continue": "Continua la valutazione",
+        "a_stop": "Interrompi la valutazione",
+        "ui_start": "Avvio",
+        "ui_decision": "Decisione",
+        "ui_process": "Processo",
+        "ui_result": "Conclusione",
+
+        "start_text": "Nuovo requisito aziendale per dati aggiuntivi (si presume che i dati siano disponibili al momento della codifica AIDC).",
+
+        "d1": "Un AI GS1 esistente potrebbe rappresentare i dati (in modo esatto o simile)?",
+        "d2": "I dati sono destinati a un ambiente completamente chiuso o ristretto?",
+        "d3": "I dati sono limitati a un settore, una regione o un paese specifico?",
+        "d4": "Questi dati si trovano in un database o in una posizione online accessibile?",
+        "d5": "I dati consentono di completare un’azione o una decisione?",
+        "d6": "Una volta specificato, il valore dei dati è logicamente immutabile?",
+        "d7": "Si prevede che i dati esprimano un elenco illimitato di dettagli?",
+        "d8": "I dati sono esplicitamente richiesti come dati AIDC codificati sull’entità fisica?",
+
+        "p1": "PROCESSO 1: Raccogliere requisiti aggiuntivi per dati a uso ristretto e revisione da parte dell’SME GS1.",
+        "p2": "PROCESSO 2: L’SME GS1 valuta ostacoli e opportunità per l’adozione dello standard di condivisione aperto.",
+
+        "cA": "CONCLUSIONE A: Utilizzare un Application Identifier GS1 esistente.",
+        "cB": "CONCLUSIONE B: Nessuna necessità di standardizzazione (ambiente chiuso/ristretto).",
+        "cC": "CONCLUSIONE C: Utilizzare lo standard globale aperto di « condivisione » consolidato.",
+        "cD": "CONCLUSIONE D: Creare il nuovo Application Identifier GS1."
+      },
+
+      "pl": {
+        "title": "GS1 Nośnik danych o dużej pojemności – Drzewo decyzyjne",
+        "btn_continue": "Kontynuuj",
+        "btn_back": "Wstecz",
+        "btn_restart": "Uruchom ponownie",
+        "a_yes": "Tak",
+        "a_no": "Nie",
+        "a_continue": "Kontynuuj ocenę",
+        "a_stop": "Zakończ ocenę",
+        "ui_start": "Start",
+        "ui_decision": "Decyzja",
+        "ui_process": "Proces",
+        "ui_result": "Wniosek",
+
+        "start_text": "Nowy wymóg biznesowy dotyczący dodatkowych danych (zakłada się dostępność danych w momencie kodowania AIDC).",
+
+        "d1": "Czy istniejący AI GS1 mógłby reprezentować te dane (dokładnie lub w sposób zbliżony)?",
+        "d2": "Czy dane mają być używane wyłącznie w całkowicie zamkniętym lub ograniczonym środowisku?",
+        "d3": "Czy dane są ograniczone do konkretnego sektora, regionu lub kraju?",
+        "d4": "Czy te dane znajdują się w dostępnej bazie danych online lub lokalizacji?",
+        "d5": "Czy dane umożliwiają podjęcie pełnego działania lub decyzji?",
+        "d6": "Czy po określeniu wartość danych jest logicznie niezmienna?",
+        "d7": "Czy oczekuje się, że dane będą wyrażać nieograniczoną listę szczegółów?",
+        "d8": "Czy dane są wyraźnie wymagane jako zakodowane dane AIDC na fizycznym obiekcie?",
+
+        "p1": "PROCES 1: Zbierz dodatkowe wymagania dla danych o ograniczonym użyciu i poddaj je przeglądowi eksperta GS1 (SME).",
+        "p2": "PROCES 2: Ekspert GS1 ocenia bariery i możliwości wdrożenia otwartego standardu udostępniania.",
+
+        "cA": "WNIOSEK A: Użyj istniejącego identyfikatora aplikacji GS1.",
+        "cB": "WNIOSEK B: Brak potrzeby standaryzacji (środowisko zamknięte/ograniczone).",
+        "cC": "WNIOSEK C: Użyj ustalonego globalnego otwartego standardu udostępniania.",
+        "cD": "WNIOSEK D: Utwórz nowy identyfikator aplikacji GS1."
       }
     }
   },
