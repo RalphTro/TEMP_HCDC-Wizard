@@ -28,9 +28,7 @@
         "ui_decision": "Decision",
         "ui_process": "Process",
         "ui_result": "Conclusion",
-
         "start_text": "New business requirement for additional data (data presumed available at time of AIDC encoding).",
-
         "d1": "Could an existing GS1 AI represent the data (exactly or similarly)?",
         "d2": "Is the data for use in an entirely closed or restricted environment?",
         "d3": "Is the data restricted for use by a specific sector, region or country?",
@@ -39,16 +37,13 @@
         "d6": "Is the data value logically unchangeable after it has been specified?",
         "d7": "Is the data expected to express an unlimited list of details?",
         "d8": "Is the data explicitly required as encoded AIDC data on the physical entity?",
-
         "p1": "PROCESS 1: Gather additional requirements for restricted-use data and SME review.",
         "p2": "PROCESS 2: GS1 SME to assess blockers and opportunities for share standard adoption.",
-
         "cA": "CONCLUSION A: Use existing GS1 Application Identifier.",
         "cB": "CONCLUSION B: No need for standardisation (closed/restricted environment).",
         "cC": "CONCLUSION C: Use the established global open 'share' standard.",
         "cD": "CONCLUSION D: Create the new GS1 Application Identifier."
       },
-
       "de": {
         "title": "GS1 High-Capacity Data Carrier - Entscheidungsbaum",
         "btn_continue": "Weiter",
@@ -62,9 +57,7 @@
         "ui_decision": "Entscheidung",
         "ui_process": "Prozess",
         "ui_result": "Fazit",
-
         "start_text": "Neue Business-Anforderung für zusätzliche Daten (Daten müssen zum Zeitpunkt der Kennzeichnung verfügbar sein).",
-
         "d1": "Könnte ein bestehender GS1 AI die Daten (exakt oder ähnlich) darstellen?",
         "d2": "Sind die Daten ausschließlich für eine geschlossene oder eingeschränkte Umgebung bestimmt?",
         "d3": "Sind die Daten auf einen bestimmten Sektor, eine Region oder ein Land beschränkt?",
@@ -73,16 +66,13 @@
         "d6": "Ist der Datenwert logisch unveränderlich, nachdem er festgelegt wurde?",
         "d7": "Sollen die Daten eine unbegrenzte Liste von Details ausdrücken?",
         "d8": "Sind die Daten ausdrücklich als kodierte AIDC-Daten auf dem physischen Objekt erforderlich?",
-
         "p1": "PROZESS 1: Zusätzliche Anforderungen für eingeschränkte Nutzung sammeln und durch GS1-SME prüfen.",
         "p2": "PROZESS 2: GS1-SME bewertet Hürden und Chancen für die Einführung von Share-Standards.",
-
         "cA": "FAZIT A: Bestehenden GS1 Application Identifier verwenden.",
         "cB": "FAZIT B: Keine Standardisierung erforderlich (geschlossene/eingeschränkte Umgebung).",
         "cC": "FAZIT C: Etablierten globalen Share-Standard verwenden.",
         "cD": "FAZIT D: Neuen GS1 Application Identifier erstellen."
       },
-
       "es": {
         "title": "GS1 High-Capacity Data Carrier - Árbol de decisión",
         "btn_continue": "Continuar",
@@ -96,9 +86,7 @@
         "ui_decision": "Decisión",
         "ui_process": "Proceso",
         "ui_result": "Conclusión",
-
         "start_text": "Nuevo requisito empresarial para datos adicionales (se asume que los datos están disponibles en el momento de la codificación AIDC).",
-
         "d1": "¿Podría un AI de GS1 existente representar los datos (exacta o de forma similar)?",
         "d2": "¿Los datos están destinados a un entorno completamente cerrado o restringido?",
         "d3": "¿Los datos están restringidos a un sector, región o país específico?",
@@ -107,16 +95,13 @@
         "d6": "¿El valor de los datos es lógicamente inmutable una vez especificado?",
         "d7": "¿Se espera que los datos expresen una lista ilimitada de detalles?",
         "d8": "¿Los datos son explícitamente requeridos como datos AIDC codificados en la entidad física?",
-
         "p1": "PROCESO 1: Recopilar requisitos adicionales para datos de uso restringido y revisión por expertos GS1.",
         "p2": "PROCESO 2: El experto GS1 evalúa barreras y oportunidades para la adopción de estándares de compartición.",
-
         "cA": "CONCLUSIÓN A: Utilizar un Application Identifier de GS1 existente.",
         "cB": "CONCLUSIÓN B: No se requiere estandarización (entorno cerrado o restringido).",
         "cC": "CONCLUSIÓN C: Utilizar el estándar global abierto de compartición establecido.",
         "cD": "CONCLUSIÓN D: Crear un nuevo Application Identifier de GS1."
       },
-
       "ja": {
         "title": "GS1高容量データキャリア - 意思決定ツリー",
         "btn_continue": "続行",
@@ -130,9 +115,7 @@
         "ui_decision": "判断",
         "ui_process": "プロセス",
         "ui_result": "結論",
-
         "start_text": "追加データに関する新たなビジネス要件（AIDC符号化時点でデータが利用可能であると想定）。",
-
         "d1": "既存のGS1 AIでそのデータを（正確または類似の形で）表現できますか？",
         "d2": "そのデータは完全にクローズドまたは制限された環境で使用されますか？",
         "d3": "そのデータは特定の業界、地域、または国に限定されていますか？",
@@ -141,16 +124,13 @@
         "d6": "一度指定された後、そのデータ値は論理的に不変ですか？",
         "d7": "そのデータは無制限の詳細リストを表現することが期待されていますか？",
         "d8": "そのデータは物理エンティティ上にAIDCとして符号化されたデータとして明示的に必要ですか？",
-
         "p1": "プロセス1：制限利用データの追加要件を収集し、GS1のSMEでレビューする。",
         "p2": "プロセス2：GS1のSMEが共有標準採用に向けた障壁と機会を評価する。",
-
         "cA": "結論A：既存のGS1アプリケーション識別子を使用する。",
         "cB": "結論B：標準化は不要（クローズド／制限付き環境）。",
         "cC": "結論C：確立されたグローバルなオープン「シェア」標準を使用する。",
         "cD": "結論D：新しいGS1アプリケーション識別子を作成する。"
       },
-
       "zh-Hans": {
         "title": "GS1高容量数据载体——决策树",
         "btn_continue": "继续",
@@ -164,9 +144,7 @@
         "ui_decision": "决策",
         "ui_process": "流程",
         "ui_result": "结论",
-
         "start_text": "关于附加数据的新业务需求（假定在AIDC编码时数据可用）。",
-
         "d1": "现有的GS1 AI能否（准确或类似地）表示该数据？",
         "d2": "该数据是否仅用于完全封闭或受限的环境？",
         "d3": "该数据是否仅限于特定行业、地区或国家使用？",
@@ -175,16 +153,13 @@
         "d6": "一旦指定，该数据值在逻辑上是否不可更改？",
         "d7": "该数据是否预期用于表达无限的细节列表？",
         "d8": "是否明确要求将该数据作为编码的AIDC数据写入物理实体？",
-
         "p1": "流程1：收集受限使用数据的附加需求，并由GS1领域专家（SME）审查。",
         "p2": "流程2：由GS1领域专家评估采用开放共享标准的阻碍与机会。",
-
         "cA": "结论A：使用现有的GS1应用标识符。",
         "cB": "结论B：无需标准化（封闭/受限环境）。",
         "cC": "结论C：使用既定的全球开放“共享”标准。",
         "cD": "结论D：创建新的GS1应用标识符。"
       },
-
       "fr": {
         "title": "GS1 Porteur de données à haute capacité - Arbre de décision",
         "btn_continue": "Continuer",
@@ -198,9 +173,7 @@
         "ui_decision": "Décision",
         "ui_process": "Processus",
         "ui_result": "Conclusion",
-
         "start_text": "Nouvelle exigence métier pour des données supplémentaires (données présumées disponibles au moment du codage AIDC).",
-
         "d1": "Un AI GS1 existant pourrait‑il représenter les données (exactement ou de manière similaire) ?",
         "d2": "Les données sont‑elles destinées à un environnement entièrement fermé ou restreint ?",
         "d3": "Les données sont‑elles limitées à un secteur, une région ou un pays spécifique ?",
@@ -209,16 +182,13 @@
         "d6": "La valeur des données est‑elle logiquement immuable une fois spécifiée ?",
         "d7": "Les données sont‑elles censées exprimer une liste illimitée de détails ?",
         "d8": "Les données sont‑elles explicitement requises comme données AIDC encodées sur l’entité physique ?",
-
         "p1": "PROCESSUS 1 : Recueillir des exigences supplémentaires pour les données à usage restreint et examen par un expert GS1.",
         "p2": "PROCESSUS 2 : L’expert GS1 évalue les obstacles et les opportunités pour l’adoption du standard ouvert de partage.",
-
         "cA": "CONCLUSION A : Utiliser un Identifiant d’Application GS1 existant.",
         "cB": "CONCLUSION B : Pas besoin de standardisation (environnement fermé/restreint).",
         "cC": "CONCLUSION C : Utiliser le standard mondial ouvert de « partage » établi.",
         "cD": "CONCLUSION D : Créer le nouvel Identifiant d’Application GS1."
       },
-
       "it": {
         "title": "GS1 High‑Capacity Data Carrier - Albero decisionale",
         "btn_continue": "Continua",
@@ -232,9 +202,7 @@
         "ui_decision": "Decisione",
         "ui_process": "Processo",
         "ui_result": "Conclusione",
-
         "start_text": "Nuovo requisito aziendale per dati aggiuntivi (si presume che i dati siano disponibili al momento della codifica AIDC).",
-
         "d1": "Un AI GS1 esistente potrebbe rappresentare i dati (in modo esatto o simile)?",
         "d2": "I dati sono destinati a un ambiente completamente chiuso o ristretto?",
         "d3": "I dati sono limitati a un settore, una regione o un paese specifico?",
@@ -243,16 +211,13 @@
         "d6": "Una volta specificato, il valore dei dati è logicamente immutabile?",
         "d7": "Si prevede che i dati esprimano un elenco illimitato di dettagli?",
         "d8": "I dati sono esplicitamente richiesti come dati AIDC codificati sull’entità fisica?",
-
         "p1": "PROCESSO 1: Raccogliere requisiti aggiuntivi per dati a uso ristretto e revisione da parte dell’SME GS1.",
         "p2": "PROCESSO 2: L’SME GS1 valuta ostacoli e opportunità per l’adozione dello standard di condivisione aperto.",
-
         "cA": "CONCLUSIONE A: Utilizzare un Application Identifier GS1 esistente.",
         "cB": "CONCLUSIONE B: Nessuna necessità di standardizzazione (ambiente chiuso/ristretto).",
         "cC": "CONCLUSIONE C: Utilizzare lo standard globale aperto di « condivisione » consolidato.",
         "cD": "CONCLUSIONE D: Creare il nuovo Application Identifier GS1."
       },
-
       "pl": {
         "title": "GS1 Nośnik danych o dużej pojemności – Drzewo decyzyjne",
         "btn_continue": "Kontynuuj",
@@ -266,9 +231,7 @@
         "ui_decision": "Decyzja",
         "ui_process": "Proces",
         "ui_result": "Wniosek",
-
         "start_text": "Nowy wymóg biznesowy dotyczący dodatkowych danych (zakłada się dostępność danych w momencie kodowania AIDC).",
-
         "d1": "Czy istniejący AI GS1 mógłby reprezentować te dane (dokładnie lub w sposób zbliżony)?",
         "d2": "Czy dane mają być używane wyłącznie w całkowicie zamkniętym lub ograniczonym środowisku?",
         "d3": "Czy dane są ograniczone do konkretnego sektora, regionu lub kraju?",
@@ -277,10 +240,8 @@
         "d6": "Czy po określeniu wartość danych jest logicznie niezmienna?",
         "d7": "Czy oczekuje się, że dane będą wyrażać nieograniczoną listę szczegółów?",
         "d8": "Czy dane są wyraźnie wymagane jako zakodowane dane AIDC na fizycznym obiekcie?",
-
         "p1": "PROCES 1: Zbierz dodatkowe wymagania dla danych o ograniczonym użyciu i poddaj je przeglądowi eksperta GS1 (SME).",
         "p2": "PROCES 2: Ekspert GS1 ocenia bariery i możliwości wdrożenia otwartego standardu udostępniania.",
-
         "cA": "WNIOSEK A: Użyj istniejącego identyfikatora aplikacji GS1.",
         "cB": "WNIOSEK B: Brak potrzeby standaryzacji (środowisko zamknięte/ograniczone).",
         "cC": "WNIOSEK C: Użyj ustalonego globalnego otwartego standardu udostępniania.",
@@ -288,83 +249,182 @@
       }
     }
   },
-
   "nodes": [
-    { "id": "start", "type": "start", "text": "start_text", "next": "d1" },
-
-    { "id": "d1", "type": "decision", "text": "d1",
+    {
+      "id": "start",
+      "type": "start",
+      "text": "start_text",
+      "next": "d1"
+    },
+    {
+      "id": "d1",
+      "type": "decision",
+      "text": "d1",
       "outcomes": [
-        { "label": "a_yes", "next": "cA" },
-        { "label": "a_no", "next": "d2" }
+        {
+          "label": "a_yes",
+          "next": "cA"
+        },
+        {
+          "label": "a_no",
+          "next": "d2"
+        }
       ]
     },
-
-    { "id": "d2", "type": "decision", "text": "d2",
+    {
+      "id": "d2",
+      "type": "decision",
+      "text": "d2",
       "outcomes": [
-        { "label": "a_yes", "next": "cB" },
-        { "label": "a_no", "next": "d3" }
+        {
+          "label": "a_yes",
+          "next": "cB"
+        },
+        {
+          "label": "a_no",
+          "next": "d3"
+        }
       ]
     },
-
-    { "id": "d3", "type": "decision", "text": "d3",
+    {
+      "id": "d3",
+      "type": "decision",
+      "text": "d3",
       "outcomes": [
-        { "label": "a_yes", "next": "p1" },
-        { "label": "a_no", "next": "d4" }
+        {
+          "label": "a_yes",
+          "next": "p1"
+        },
+        {
+          "label": "a_no",
+          "next": "d4"
+        }
       ]
     },
-
-    { "id": "p1", "type": "process", "text": "p1",
+    {
+      "id": "p1",
+      "type": "process",
+      "text": "p1",
       "nextOptions": [
-        { "label": "a_continue", "next": "d4" },
-        { "label": "a_stop", "next": "cC" }
+        {
+          "label": "a_continue",
+          "next": "d4"
+        },
+        {
+          "label": "a_stop",
+          "next": "cC"
+        }
       ]
     },
-
-    { "id": "d4", "type": "decision", "text": "d4",
+    {
+      "id": "d4",
+      "type": "decision",
+      "text": "d4",
       "outcomes": [
-        { "label": "a_yes", "next": "cC" },
-        { "label": "a_no", "next": "p2" }
+        {
+          "label": "a_yes",
+          "next": "cC"
+        },
+        {
+          "label": "a_no",
+          "next": "p2"
+        }
       ]
     },
-
-    { "id": "p2", "type": "process", "text": "p2",
+    {
+      "id": "p2",
+      "type": "process",
+      "text": "p2",
       "nextOptions": [
-        { "label": "a_continue", "next": "d5" },
-        { "label": "a_stop", "next": "cC" }
+        {
+          "label": "a_continue",
+          "next": "d5"
+        },
+        {
+          "label": "a_stop",
+          "next": "cC"
+        }
       ]
     },
-
-    { "id": "d5", "type": "decision", "text": "d5",
+    {
+      "id": "d5",
+      "type": "decision",
+      "text": "d5",
       "outcomes": [
-        { "label": "a_no", "next": "cC" },
-        { "label": "a_yes", "next": "d6" }
+        {
+          "label": "a_yes",
+          "next": "d6"
+        },
+        {
+          "label": "a_no",
+          "next": "cC"
+        }
       ]
     },
-
-    { "id": "d6", "type": "decision", "text": "d6",
+    {
+      "id": "d6",
+      "type": "decision",
+      "text": "d6",
       "outcomes": [
-        { "label": "a_no", "next": "cC" },
-        { "label": "a_yes", "next": "d7" }
+        {
+          "label": "a_yes",
+          "next": "d7"
+        },
+        {
+          "label": "a_no",
+          "next": "cC"
+        }
       ]
     },
-
-    { "id": "d7", "type": "decision", "text": "d7",
+    {
+      "id": "d7",
+      "type": "decision",
+      "text": "d7",
       "outcomes": [
-        { "label": "a_yes", "next": "cC" },
-        { "label": "a_no", "next": "d8" }
+        {
+          "label": "a_yes",
+          "next": "cC"
+        },
+        {
+          "label": "a_no",
+          "next": "d8"
+        }
       ]
     },
-
-    { "id": "d8", "type": "decision", "text": "d8",
+    {
+      "id": "d8",
+      "type": "decision",
+      "text": "d8",
       "outcomes": [
-        { "label": "a_no", "next": "cC" },
-        { "label": "a_yes", "next": "cD" }
+        {
+          "label": "a_yes",
+          "next": "cD"
+        },
+        {
+          "label": "a_no",
+          "next": "cC"
+        }
       ]
     },
-
-    { "id": "cA", "type": "result", "text": "cA" },
-    { "id": "cB", "type": "result", "text": "cB" },
-    { "id": "cC", "type": "result", "text": "cC" },
-    { "id": "cD", "type": "result", "text": "cD" }
+    {
+      "id": "cA",
+      "type": "result",
+      "text": "cA"
+    },
+    {
+      "id": "cB",
+      "type": "result",
+      "text": "cB"
+    },
+    {
+      "id": "cC",
+      "type": "result",
+      "text": "cC"
+    },
+    {
+      "id": "cD",
+      "type": "result",
+      "text": "cD"
+    }
   ]
 }
